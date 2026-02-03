@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etherum Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F2FDFA] font-poppins text-gray-800">
+    <header class="w-full relative z-50">
+        <div class="container mx-auto max-w-7xl flex justify-between items-center py-6 px-4 md:px-6">
+
+            <div class="flex items-center gap-2">
+                <div class="text-[#02B6BD]">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"
+                        fill="currentColor">
+                        <path
+                            d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                    </svg>
+                </div>
+                <div class="font-black text-2xl text-gray-900 tracking-tight">etheum</div>
+            </div>
+
+            <nav class="hidden lg:flex justify-center items-center gap-6 xl:gap-8 font-medium text-gray-500">
+                <div class="relative group flex items-center cursor-pointer py-2">
+                    <a href="#" class="text-gray-900 group-hover:text-[#02B6BD] transition-colors">Home</a>
+                    <i class="fa-solid fa-chevron-down text-xs ml-1 transition-transform group-hover:rotate-180"></i>
+                </div>
+                <div class="relative group flex items-center cursor-pointer py-2">
+                    <a href="#" class="hover:text-[#02B6BD] transition-colors">Explore</a>
+                    <i class="fa-solid fa-chevron-down text-xs ml-1 transition-transform group-hover:rotate-180"></i>
+                </div>
+                <div class="relative group flex items-center cursor-pointer py-2">
+                    <a href="#" class="hover:text-[#02B6BD] transition-colors">Pages</a>
+                    <i class="fa-solid fa-chevron-down text-xs ml-1 transition-transform group-hover:rotate-180"></i>
+                </div>
+                <a href="#" class="hover:text-[#02B6BD] transition-colors">Activity</a>
+                <a href="#" class="hover:text-[#02B6BD] transition-colors">Blog</a>
+                <a href="#" class="hover:text-[#02B6BD] transition-colors">Rankings</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <div class="flex items-center bg-white border border-gray-200 rounded-full px-4 py-2 w-64 shadow-sm">
+                    <i class="fa-solid fa-magnifying-glass text-[#02B6BD]"></i>
+                    <input type="text" placeholder="Type to search" class="ml-2 w-full outline-none text-sm text-gray-600 bg-transparent">
+                </div>
+
+                <button class="w-10 h-10 rounded-full bg-[#02B6BD] text-white flex items-center justify-center hover:bg-[#029ca3] transition">
+                    <i class="fa-solid fa-wallet"></i>
+                </button>
+                <button class="w-10 h-10 rounded-full bg-[#02B6BD] text-white flex items-center justify-center hover:bg-[#029ca3] transition">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <div class="flex items-center bg-[#02B6BD] rounded-full pr-4 pl-1 py-1 gap-2 text-white text-sm font-semibold">
+                    <img src="./img/m1" onerror="this.src='https://i.pravatar.cc/150?img=11'" alt="User" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+                    5.42 ETH
+                </div>
+            </div>
+
+            <div class="flex lg:hidden gap-4 items-center">
+                <button class="text-[#02B6BD] text-xl">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="text-gray-600 p-2">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="w-full relative overflow-hidden pb-12 lg:pb-0">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2 z-0"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 translate-x-1/3 translate-y-1/3 z-0"></div>
+
+        <div class="container mx-auto max-w-7xl px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 pt-8 lg:pt-16">
+            
+            <div class="space-y-6 text-center lg:text-left order-1">
+                <div class="flex justify-center lg:justify-start">
+                    <span class="bg-[#CCFBF1] text-[#26877E] px-4 py-1.5 rounded text-xs font-bold tracking-wider uppercase inline-block">
+                        Biggest NFT Marketplace
+                    </span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-black">
+                    Discover, Create & Sell <br>
+                    <span class="text-[#02AAB0]">Digital Artworks.</span>
+                </h1>
+                
+                <p class="text-gray-500 text-base sm:text-lg max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                    We offer a wide range of non-fungible tokens, including art, censorship-resistant domain names and other collectibles.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                    <a href="#" class="w-full sm:w-auto text-center bg-[#01BAAE] hover:bg-[#019f95] text-white font-semibold rounded-full px-8 py-3.5 transition shadow-lg shadow-teal-500/20">
+                        EXPLORE ITEMS
+                    </a>
+                    <a href="#" class="w-full sm:w-auto text-center bg-white border-2 border-[#02AAB0] text-[#02AAB0] hover:bg-teal-50 font-semibold rounded-full px-8 py-3.5 transition">
+                        CONNECT WALLET
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden lg:grid grid-cols-2 gap-4 relative order-2 min-h-[500px] content-center p-4">
+                <div class="absolute top-0 right-10 w-24 h-24 opacity-60" style="background-image: radial-gradient(#14B8A6 1.5px, transparent 1.5px); background-size: 16px 16px;"></div>
+                
+                <div class="space-y-4 pt-12">
+                    <img class="w-full h-64 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500" src="./img/a1.jpg" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&q=80'" alt="NFT Art 1">
+                    <img class="w-full h-56 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500" src="./img/a4.jpg" onerror="this.src='https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?w=500&q=80'" alt="NFT Art 3">
+                </div>
+                <div class="space-y-4 -mt-12">
+                    <img class="w-full h-72 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500" src="./img/a3.jpg" onerror="this.src='https://images.unsplash.com/photo-1579783902614-a3fb392796a5?w=500&q=80'" alt="NFT Art 2">
+                    <img class="w-full h-64 object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500" src="./img/a3.jpg" onerror="this.src='https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=500&q=80'" alt="NFT Art 4">
+                </div>
+
+                <div class="absolute top-1/2 left-0 text-[#14B8A6] text-xl animate-bounce">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="absolute top-10 right-0 text-[#14B8A6] text-xl animate-pulse">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="absolute bottom-20 left-10 text-[#14B8A6] text-sm">
+                    <i class="fa-regular fa-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6 space-y-8">
+            <div class="text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                        <div class="w-8 h-0.5 bg-[#14B8A6]"></div>
+                        <span class="text-[#14B8A6] font-semibold tracking-wide">Featured</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Featured Items</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative">
+                        <img class="w-full aspect-square object-cover rounded-xl" src="./img/c1.jpg" onerror="this.src='https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=500&q=80'" alt="Item">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded-full flex items-center gap-1 shadow-sm">
+                            <i class="fa-solid fa-heart text-red-500 text-xs"></i>
+                            <span class="text-xs font-bold">12</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-[#22B5BA] font-medium text-sm">MasCatDog</h3>
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-brands fa-ethereum text-xs px-1"></i></span>
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-900">The Paradox Ford</h2>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-solid fa-tag text-xs px-0.5"></i></span>
+                            <span>0.08 ETH</span>
+                        </div>
+                        <button class="w-full mt-2 border border-[#14B8A6] text-[#14B8A6] hover:bg-[#14B8A6] hover:text-white font-medium py-2 rounded-full transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-bag-shopping"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative">
+                        <img class="w-full aspect-square object-cover rounded-xl" src="./img/c1.jpg" onerror="this.src='https://images.unsplash.com/photo-1618172193763-c511deb635ca?w=500&q=80'" alt="Item">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded-full flex items-center gap-1 shadow-sm">
+                            <i class="fa-solid fa-heart text-red-500 text-xs"></i>
+                            <span class="text-xs font-bold">45</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-[#22B5BA] font-medium text-sm">MasCatDog</h3>
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-brands fa-ethereum text-xs px-1"></i></span>
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-900">Pixel World</h2>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-solid fa-tag text-xs px-0.5"></i></span>
+                            <span>0.12 ETH</span>
+                        </div>
+                        <button class="w-full mt-2 border border-[#14B8A6] text-[#14B8A6] hover:bg-[#14B8A6] hover:text-white font-medium py-2 rounded-full transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-bag-shopping"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative">
+                        <img class="w-full aspect-square object-cover rounded-xl" src="./img/c6.jpg" onerror="this.src='https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=500&q=80'" alt="Item">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded-full flex items-center gap-1 shadow-sm">
+                            <i class="fa-solid fa-heart text-red-500 text-xs"></i>
+                            <span class="text-xs font-bold">89</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-[#22B5BA] font-medium text-sm">MasCatDog</h3>
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-brands fa-ethereum text-xs px-1"></i></span>
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-900">Cyber Punk</h2>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-solid fa-tag text-xs px-0.5"></i></span>
+                            <span>1.05 ETH</span>
+                        </div>
+                        <button class="w-full mt-2 border border-[#14B8A6] text-[#14B8A6] hover:bg-[#14B8A6] hover:text-white font-medium py-2 rounded-full transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-bag-shopping"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative">
+                        <img class="w-full aspect-square object-cover rounded-xl" src="./img/c1.jpg" onerror="this.src='https://images.unsplash.com/photo-1635322966219-b75ed372eb01?w=500&q=80'" alt="Item">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded-full flex items-center gap-1 shadow-sm">
+                            <i class="fa-solid fa-heart text-red-500 text-xs"></i>
+                            <span class="text-xs font-bold">23</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-[#22B5BA] font-medium text-sm">MasCatDog</h3>
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-brands fa-ethereum text-xs px-1"></i></span>
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-900">Abstract Art</h2>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <span class="bg-[#99F6E4] p-1 rounded-full"><i class="fa-solid fa-tag text-xs px-0.5"></i></span>
+                            <span>0.55 ETH</span>
+                        </div>
+                        <button class="w-full mt-2 border border-[#14B8A6] text-[#14B8A6] hover:bg-[#14B8A6] hover:text-white font-medium py-2 rounded-full transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-bag-shopping"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center pt-8">
+                <button class="bg-[#02B6BD] text-white px-8 py-2.5 rounded-full font-medium hover:bg-[#029ca3] transition shadow-md">
+                    Load more
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                        <div class="w-8 h-0.5 bg-[#14B8A6]"></div>
+                        <span class="text-[#14B8A6] font-semibold tracking-wide">Top List</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Creator of the Week</h2>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-[#02B6BD] transition mb-1">
+                        VIEW ALL <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="w-20 h-0.5 bg-[#77EDDB]"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-28 bg-gradient-to-r from-teal-200 to-blue-200"></div>
+                    <div class="px-6 pb-6 relative text-center">
+                        <div class="relative -mt-12 mb-4 inline-block">
+                            <img class="h-24 w-24 rounded-full object-cover border-4 border-white mx-auto" src="./img/m2.jpg" onerror="this.src='https://i.pravatar.cc/150?img=12'" alt="Profile">
+                            <span class="absolute bottom-1 right-1 bg-blue-500 text-white text-xs p-1 rounded-full border-2 border-white">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Chris Smith</h3>
+                        <div class="text-sm text-gray-500 mb-4 flex justify-center items-center gap-2">
+                            <span>0xd07...243</span>
+                            <i class="fa-regular fa-copy cursor-pointer hover:text-[#02B6BD]"></i>
+                        </div>
+                        
+                        <div class="flex justify-center gap-4 mb-6">
+                            <div class="text-center">
+                                <div class="font-bold text-gray-900">890</div>
+                                <div class="text-xs text-gray-500 uppercase">Followers</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="font-bold text-gray-900">17</div>
+                                <div class="text-xs text-gray-500 uppercase">Items</div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-white border border-gray-200 text-gray-600 py-2 rounded-full font-semibold hover:bg-[#02B6BD] hover:text-white hover:border-[#02B6BD] transition">
+                            + FOLLOW
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-28 bg-gradient-to-r from-purple-200 to-pink-200"></div>
+                    <div class="px-6 pb-6 relative text-center">
+                        <div class="relative -mt-12 mb-4 inline-block">
+                            <img class="h-24 w-24 rounded-full object-cover border-4 border-white mx-auto" src="./img/m2.jpg" onerror="this.src='https://i.pravatar.cc/150?img=32'" alt="Profile">
+                             <span class="absolute bottom-1 right-1 bg-blue-500 text-white text-xs p-1 rounded-full border-2 border-white">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Sarah Jones</h3>
+                        <div class="text-sm text-gray-500 mb-4 flex justify-center items-center gap-2">
+                            <span>0x8a1...992</span>
+                            <i class="fa-regular fa-copy cursor-pointer hover:text-[#02B6BD]"></i>
+                        </div>
+                        
+                        <div class="flex justify-center gap-4 mb-6">
+                            <div class="text-center">
+                                <div class="font-bold text-gray-900">1.2k</div>
+                                <div class="text-xs text-gray-500 uppercase">Followers</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="font-bold text-gray-900">42</div>
+                                <div class="text-xs text-gray-500 uppercase">Items</div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-white border border-gray-200 text-gray-600 py-2 rounded-full font-semibold hover:bg-[#02B6BD] hover:text-white hover:border-[#02B6BD] transition">
+                            + FOLLOW
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-28 bg-gradient-to-r from-yellow-100 to-orange-200"></div>
+                    <div class="px-6 pb-6 relative text-center">
+                        <div class="relative -mt-12 mb-4 inline-block">
+                            <img class="h-24 w-24 rounded-full object-cover border-4 border-white mx-auto" src="./img/m2.jpg" onerror="this.src='https://i.pravatar.cc/150?img=59'" alt="Profile">
+                             <span class="absolute bottom-1 right-1 bg-blue-500 text-white text-xs p-1 rounded-full border-2 border-white">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Mike Ross</h3>
+                        <div class="text-sm text-gray-500 mb-4 flex justify-center items-center gap-2">
+                            <span>0xb2c...118</span>
+                            <i class="fa-regular fa-copy cursor-pointer hover:text-[#02B6BD]"></i>
+                        </div>
+                        
+                        <div class="flex justify-center gap-4 mb-6">
+                            <div class="text-center">
+                                <div class="font-bold text-gray-900">540</div>
+                                <div class="text-xs text-gray-500 uppercase">Followers</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="font-bold text-gray-900">8</div>
+                                <div class="text-xs text-gray-500 uppercase">Items</div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-white border border-gray-200 text-gray-600 py-2 rounded-full font-semibold hover:bg-[#02B6BD] hover:text-white hover:border-[#02B6BD] transition">
+                            + FOLLOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+             <div class="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                        <div class="w-8 h-0.5 bg-[#14B8A6]"></div>
+                        <span class="text-[#14B8A6] font-semibold tracking-wide">Blog</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Recent Updates</h2>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-[#02B6BD] transition mb-1">
+                        VIEW ALL <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="w-20 h-0.5 bg-[#77EDDB]"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <img class="w-full h-64 object-cover rounded-2xl" src="./img/a4.jpg" onerror="this.src='https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=500&q=80'" alt="Blog Image">
+                    <div class="flex items-center gap-3">
+                        <img class="w-10 h-10 rounded-full" src="./img/m2.jpg" onerror="this.src='https://i.pravatar.cc/150?img=12'" alt="Author">
+                        <span class="font-medium text-gray-700">Robert Alex</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center space-y-4">
+                    <h3 class="text-xl font-bold text-gray-900 leading-snug">Why you must experience podcast at least once in your lifetime</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#99F6E4] px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <i class="fa-solid fa-globe"></i> NFT World
+                        </span>
+                        <span class="bg-yellow-200 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                             <i class="fa-solid fa-store"></i> Marketplace
+                        </span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Periodic that inn to a her window there of the original derisively as to when concept compensation</p>
+                    <a href="#" class="text-[#02B6BD] font-semibold flex items-center gap-2 hover:underline">
+                        READ MORE <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                 <div class="space-y-4">
+                    <img class="w-full h-64 object-cover rounded-2xl" src="./img/a4.jpg" onerror="this.src='https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=500&q=80'" alt="Blog Image">
+                    <div class="flex items-center gap-3">
+                        <img class="w-10 h-10 rounded-full" src="./img/m2.jpg" onerror="this.src='https://i.pravatar.cc/150?img=33'" alt="Author">
+                        <span class="font-medium text-gray-700">Jane Doe</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center space-y-4">
+                    <h3 class="text-xl font-bold text-gray-900 leading-snug">The future of Digital Assets and how to invest correctly</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#99F6E4] px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                            <i class="fa-solid fa-globe"></i> NFT World
+                        </span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Periodic that inn to a her window there of the original derisively as to when concept compensation</p>
+                    <a href="#" class="text-[#02B6BD] font-semibold flex items-center gap-2 hover:underline">
+                        READ MORE <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="fa-solid fa-wallet text-2xl"></i> cowrywise</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="fa-solid fa-bolt text-2xl"></i> TalentQL</div>
+                <div class="flex items-center gap-2 font-extrabold text-2xl"><i class="fa-solid fa-cube text-3xl"></i> busha</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="fa-solid fa-bell text-2xl"></i> Bellamaija</div>
+                <div class="flex items-center gap-2 font-bold text-xl"><i class="fa-solid fa-key text-2xl"></i> access</div>
+                <div class="flex items-center gap-2 font-bold text-xl">mobnia</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto max-w-7xl px-4 md:px-6 py-16 space-y-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-gray-900">My Account</h3>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-[#02B6BD]">Creator Dashboard</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">Wallet</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">Create Item</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-gray-900">Web Links</h3>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-[#02B6BD]">Item Details</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">Wallet</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">Rankings</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">User Profile</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-gray-900">Community</h3>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-[#02B6BD]">Blog Category</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">Wallet</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#02B6BD]">Blog Details</a></li>
+                    </ul>
+                </div>
+                 <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-gray-900">Contacts</h3>
+                    <ul class="space-y-2 text-gray-500 text-sm">
+                        <li>123 Main Street, NY, USA</li>
+                        <li>+1 234 567 890</li>
+                        <li>info@etheum.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="h-px bg-gray-200 w-full"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-[#02B6BD] hover:text-[#02B6BD] transition text-sm font-medium text-gray-600">
+                        <i class="fa-brands fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-[#02B6BD] hover:text-[#02B6BD] transition text-sm font-medium text-gray-600">
+                        <i class="fa-brands fa-twitter"></i> Twitter
+                    </a>
+                     <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-[#02B6BD] hover:text-[#02B6BD] transition text-sm font-medium text-gray-600">
+                        <i class="fa-brands fa-linkedin-in"></i> Linkedin
+                    </a>
+                     <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-300 hover:border-[#02B6BD] hover:text-[#02B6BD] transition text-sm font-medium text-gray-600">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                </div>
+                
+                <div class="text-gray-500 text-sm text-center md:text-right">
+                    <p>&copy; 2026 Etheum. Designed by <span class="text-[#02B6BD]">Thermeix</span></p>
+                    <div class="flex gap-4 justify-center md:justify-end mt-2 text-xs">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <a href="#" class="hover:underline">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
